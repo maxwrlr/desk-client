@@ -7,19 +7,57 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		50CF0BF828E6D9070051E185 /* SchreibtischApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CF0BF728E6D9070051E185 /* SchreibtischApp.swift */; };
-		50CF0BFA28E6D9070051E185 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CF0BF928E6D9070051E185 /* ContentView.swift */; };
 		50CF0BFC28E6D9080051E185 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50CF0BFB28E6D9080051E185 /* Assets.xcassets */; };
 		50CF0BFF28E6D9080051E185 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50CF0BFE28E6D9080051E185 /* Preview Assets.xcassets */; };
+		50CF0C1228E6DA520051E185 /* ORSSerial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50CF0C0C28E6DA230051E185 /* ORSSerial.framework */; };
+		50CF0C2C28E6DB830051E185 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CF0C2828E6DB830051E185 /* SettingsView.swift */; };
+		50CF0C2D28E6DB830051E185 /* PresetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CF0C2928E6DB830051E185 /* PresetButton.swift */; };
+		50CF0C2E28E6DB830051E185 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CF0C2A28E6DB830051E185 /* ContentView.swift */; };
+		50CF0C2F28E6DB830051E185 /* ArrowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CF0C2B28E6DB830051E185 /* ArrowButton.swift */; };
+		50CF0C3328E6DBE80051E185 /* Desk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CF0C3228E6DBE80051E185 /* Desk.swift */; };
+		50CF0C3728E6DBF70051E185 /* SchreibtischApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CF0C3628E6DBF70051E185 /* SchreibtischApp.swift */; };
+		50CF0C3928E6DC130051E185 /* SerialHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CF0C3828E6DC130051E185 /* SerialHandler.swift */; };
+		50CF0C3B28E6DD610051E185 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50CF0C3A28E6DD610051E185 /* Info.plist */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		50CF0C0B28E6DA230051E185 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50CF0C0628E6DA230051E185 /* ORSSerialPort.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9DCA89121A2BB106009285EB;
+			remoteInfo = ORSSerial;
+		};
+		50CF0C0D28E6DA230051E185 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50CF0C0628E6DA230051E185 /* ORSSerialPort.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9D7472131B6D7767002D8B10;
+			remoteInfo = "ORSSerialPort Tests";
+		};
+		50CF0C0F28E6DA4C0051E185 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50CF0C0628E6DA230051E185 /* ORSSerialPort.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DCA89111A2BB106009285EB;
+			remoteInfo = ORSSerial;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		50CF0BF428E6D9070051E185 /* Schreibtisch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Schreibtisch.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		50CF0BF728E6D9070051E185 /* SchreibtischApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchreibtischApp.swift; sourceTree = "<group>"; };
-		50CF0BF928E6D9070051E185 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		50CF0BFB28E6D9080051E185 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50CF0BFE28E6D9080051E185 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		50CF0C0028E6D9080051E185 /* Schreibtisch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Schreibtisch.entitlements; sourceTree = "<group>"; };
+		50CF0C0628E6DA230051E185 /* ORSSerialPort.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ORSSerialPort.xcodeproj; path = "Frameworks/ORSSerialPort/Framework Project/ORSSerialPort.xcodeproj"; sourceTree = "<group>"; };
+		50CF0C2828E6DB830051E185 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		50CF0C2928E6DB830051E185 /* PresetButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresetButton.swift; sourceTree = "<group>"; };
+		50CF0C2A28E6DB830051E185 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		50CF0C2B28E6DB830051E185 /* ArrowButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrowButton.swift; sourceTree = "<group>"; };
+		50CF0C3228E6DBE80051E185 /* Desk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Desk.swift; path = Schreibtisch/Desk.swift; sourceTree = SOURCE_ROOT; };
+		50CF0C3628E6DBF70051E185 /* SchreibtischApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchreibtischApp.swift; sourceTree = "<group>"; };
+		50CF0C3828E6DC130051E185 /* SerialHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerialHandler.swift; sourceTree = "<group>"; };
+		50CF0C3A28E6DD610051E185 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50CF0C1228E6DA520051E185 /* ORSSerial.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,8 +75,10 @@
 		50CF0BEB28E6D9060051E185 = {
 			isa = PBXGroup;
 			children = (
+				50CF0C0628E6DA230051E185 /* ORSSerialPort.xcodeproj */,
 				50CF0BF628E6D9070051E185 /* Schreibtisch */,
 				50CF0BF528E6D9070051E185 /* Products */,
+				50CF0C1128E6DA520051E185 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,10 +93,13 @@
 		50CF0BF628E6D9070051E185 /* Schreibtisch */ = {
 			isa = PBXGroup;
 			children = (
-				50CF0BF728E6D9070051E185 /* SchreibtischApp.swift */,
-				50CF0BF928E6D9070051E185 /* ContentView.swift */,
+				50CF0C2728E6DB5D0051E185 /* Views */,
+				50CF0C3628E6DBF70051E185 /* SchreibtischApp.swift */,
+				50CF0C3828E6DC130051E185 /* SerialHandler.swift */,
+				50CF0C3228E6DBE80051E185 /* Desk.swift */,
 				50CF0BFB28E6D9080051E185 /* Assets.xcassets */,
 				50CF0C0028E6D9080051E185 /* Schreibtisch.entitlements */,
+				50CF0C3A28E6DD610051E185 /* Info.plist */,
 				50CF0BFD28E6D9080051E185 /* Preview Content */,
 			);
 			path = Schreibtisch;
@@ -67,6 +111,33 @@
 				50CF0BFE28E6D9080051E185 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		50CF0C0728E6DA230051E185 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50CF0C0C28E6DA230051E185 /* ORSSerial.framework */,
+				50CF0C0E28E6DA230051E185 /* ORSSerialPort Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50CF0C1128E6DA520051E185 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		50CF0C2728E6DB5D0051E185 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				50CF0C2B28E6DB830051E185 /* ArrowButton.swift */,
+				50CF0C2A28E6DB830051E185 /* ContentView.swift */,
+				50CF0C2928E6DB830051E185 /* PresetButton.swift */,
+				50CF0C2828E6DB830051E185 /* SettingsView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +154,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				50CF0C1028E6DA4C0051E185 /* PBXTargetDependency */,
 			);
 			name = Schreibtisch;
 			productName = Schreibtisch;
@@ -115,6 +187,12 @@
 			mainGroup = 50CF0BEB28E6D9060051E185;
 			productRefGroup = 50CF0BF528E6D9070051E185 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 50CF0C0728E6DA230051E185 /* Products */;
+					ProjectRef = 50CF0C0628E6DA230051E185 /* ORSSerialPort.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				50CF0BF328E6D9060051E185 /* Schreibtisch */,
@@ -122,11 +200,29 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		50CF0C0C28E6DA230051E185 /* ORSSerial.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ORSSerial.framework;
+			remoteRef = 50CF0C0B28E6DA230051E185 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		50CF0C0E28E6DA230051E185 /* ORSSerialPort Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "ORSSerialPort Tests.xctest";
+			remoteRef = 50CF0C0D28E6DA230051E185 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		50CF0BF228E6D9060051E185 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50CF0C3B28E6DD610051E185 /* Info.plist in Resources */,
 				50CF0BFF28E6D9080051E185 /* Preview Assets.xcassets in Resources */,
 				50CF0BFC28E6D9080051E185 /* Assets.xcassets in Resources */,
 			);
@@ -139,12 +235,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50CF0BFA28E6D9070051E185 /* ContentView.swift in Sources */,
-				50CF0BF828E6D9070051E185 /* SchreibtischApp.swift in Sources */,
+				50CF0C3728E6DBF70051E185 /* SchreibtischApp.swift in Sources */,
+				50CF0C3928E6DC130051E185 /* SerialHandler.swift in Sources */,
+				50CF0C2D28E6DB830051E185 /* PresetButton.swift in Sources */,
+				50CF0C3328E6DBE80051E185 /* Desk.swift in Sources */,
+				50CF0C2F28E6DB830051E185 /* ArrowButton.swift in Sources */,
+				50CF0C2E28E6DB830051E185 /* ContentView.swift in Sources */,
+				50CF0C2C28E6DB830051E185 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		50CF0C1028E6DA4C0051E185 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ORSSerial;
+			targetProxy = 50CF0C0F28E6DA4C0051E185 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		50CF0C0128E6D9080051E185 /* Debug */ = {
