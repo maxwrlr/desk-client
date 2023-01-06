@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50164778296768240060A144 /* ORSSerial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50CF0C0C28E6DA230051E185 /* ORSSerial.framework */; };
+		50164779296768240060A144 /* ORSSerial.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 50CF0C0C28E6DA230051E185 /* ORSSerial.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		50CF0BFC28E6D9080051E185 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50CF0BFB28E6D9080051E185 /* Assets.xcassets */; };
 		50CF0BFF28E6D9080051E185 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50CF0BFE28E6D9080051E185 /* Preview Assets.xcassets */; };
-		50CF0C1228E6DA520051E185 /* ORSSerial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50CF0C0C28E6DA230051E185 /* ORSSerial.framework */; };
 		50CF0C2C28E6DB830051E185 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CF0C2828E6DB830051E185 /* SettingsView.swift */; };
 		50CF0C2D28E6DB830051E185 /* PresetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CF0C2928E6DB830051E185 /* PresetButton.swift */; };
 		50CF0C2E28E6DB830051E185 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CF0C2A28E6DB830051E185 /* ContentView.swift */; };
@@ -35,14 +36,21 @@
 			remoteGlobalIDString = 9D7472131B6D7767002D8B10;
 			remoteInfo = "ORSSerialPort Tests";
 		};
-		50CF0C0F28E6DA4C0051E185 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 50CF0C0628E6DA230051E185 /* ORSSerialPort.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 9DCA89111A2BB106009285EB;
-			remoteInfo = ORSSerial;
-		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5016477A296768240060A144 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				50164779296768240060A144 /* ORSSerial.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		50CF0BF428E6D9070051E185 /* Schreibtisch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Schreibtisch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50CF0C1228E6DA520051E185 /* ORSSerial.framework in Frameworks */,
+				50164778296768240060A144 /* ORSSerial.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,11 +158,11 @@
 				50CF0BF028E6D9060051E185 /* Sources */,
 				50CF0BF128E6D9060051E185 /* Frameworks */,
 				50CF0BF228E6D9060051E185 /* Resources */,
+				5016477A296768240060A144 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				50CF0C1028E6DA4C0051E185 /* PBXTargetDependency */,
 			);
 			name = Schreibtisch;
 			productName = Schreibtisch;
@@ -246,14 +254,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		50CF0C1028E6DA4C0051E185 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ORSSerial;
-			targetProxy = 50CF0C0F28E6DA4C0051E185 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		50CF0C0128E6D9080051E185 /* Debug */ = {
@@ -390,6 +390,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = de.max.Schreibtisch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -417,6 +418,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = de.max.Schreibtisch;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -38,7 +38,7 @@ struct ContentView: View {
 			Divider()
 			
 			VStack {
-				HStack(alignment: .center) {
+				HStack {
 					VStack(alignment: .leading) {
 						Text("Aktuelle Höhe")
 							.bold()
@@ -87,6 +87,7 @@ struct ContentView: View {
 		}
 		.padding(.vertical, 10)
 		.padding(.horizontal, 14)
+		.frame(width: 250)
 	}
 }
 
