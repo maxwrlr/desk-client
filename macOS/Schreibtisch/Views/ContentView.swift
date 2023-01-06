@@ -10,7 +10,7 @@ struct ContentView: View {
 	@State var isOn = true
 	
 	let formatter = NumberFormatter()
-
+	
 	init() {
 		formatter.minimumFractionDigits = 1
 		formatter.maximumFractionDigits = 1
@@ -18,22 +18,20 @@ struct ContentView: View {
 	
 	var body: some View {
 		VStack(spacing: 8) {
-			HStack {
+			Toggle(isOn: $isOn) {
 				Text("Schreibtisch")
 					.bold()
-				Spacer()
-				Toggle("", isOn: $isOn)
-					.labelsHidden()
-					.toggleStyle(SwitchToggleStyle(tint: .accentColor))
-					.onChange(of: isOn) { value in
-						if(value) {
-							desk.connect()
-						} else {
-							desk.disconnect()
-						}
-					}
+					.frame(maxWidth: .infinity, alignment: .leading)
 			}
 			.padding(.bottom, 2)
+			.toggleStyle(SwitchToggleStyle(tint: .accentColor))
+			.onChange(of: isOn) { value in
+				if(value) {
+					desk.connect()
+				} else {
+					desk.disconnect()
+				}
+			}
 			
 			Divider()
 			
