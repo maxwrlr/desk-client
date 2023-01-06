@@ -40,7 +40,7 @@ struct ContentView: View {
 					VStack(alignment: .leading) {
 						Text("Aktuelle Höhe")
 							.bold()
-							.foregroundColor(.secondary)
+							.opacity(0.7)
 						Text(desk.height > 0 ? "\(Float(desk.height) / 10 as NSNumber, formatter: formatter)cm" : "---")
 					}
 					
